@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nextSibling Example</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      gap: 150px;
+    }
+  </style>
+  <body>
+    <section>
+      <h1>To Do Apps</h1>
+
+      <form>
+        <label for="new-task">Add new Task</label>
+        <input type="text" id="new-task" />
+        <input type="submit" id="addTask" value="Add Task" />
+      </form>
+
+      <div class="container">
+        <div class="to-do-list">
+          <h1>Incomplete Task</h1>
+          <ul id="items">
+            <li class="item">
+              <input type="checkbox" /><label>Task Name</label>
+            </li>
+            <li class="item">
+              <input type="checkbox" /><label>Task Name</label>
+            </li>
+            <li class="item">
+              <input type="checkbox" /><label>Task Name</label>
+            </li>
+            <li class="item">
+              <input type="checkbox" /><label>Task Name</label>
+            </li>
+          </ul>
+        </div>
+        <div class="complete-list">
+          <h1>complete Task</h1>
+          <ul id="items">
+            <li class="item">
+              Task Name <button class="delete">Delete</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
